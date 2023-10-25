@@ -1,24 +1,24 @@
 #include<stdio.h>
 int main() {
-    int a,b;
-    printf("Enter the numbers");
-    scanf("%d %d",&a,&b);
-    /*c=a;
-    a=b;
-    b=c;*/
+    int i,j,k;
     
- /*   a=a+b;
-    b=a-b;
-    a=a-b;
-    */
-    
-    a=a*b;
-    b=a/b;
-    a=a/b;
-  
-   
-    
-    printf("%d %d",a,b);
+    for(i=1;i<=4;i++)
+    {
+        k=1;
+        
+        for(j=1;j<=7;j++)
+      
+      if(j<=5-i || j>=3+i) {
+      printf("%d",k);
+      j<4 ? k++:k--;
+      }
+      else {
+      printf(" ");
+          if(j==4)
+          k--; // eak hi baar kum hogi value;
+      }
+      
+      printf("\n");
+    }
     return 0;
 }
-
